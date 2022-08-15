@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../sass/components/_background.sass","../sass/components/_colors.sass"],"names":[],"mappings":"AAEA;EACI;EACA;EACA;EACA,YCLU;EDMV;EACA;;AAEA;EACI;;AAEA;EACI;EACA;EACA;EACA;EACA,OCfC;;ADgBL;EACI;EACA;EACA;EACA;EACA;EACA,OCrBH;;ADsBL;EACI;EACA;EACA,YC7BM;ED8BN;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA,OCrCM;;ADuCN;EACI;EACA","file":"styles.css"}
