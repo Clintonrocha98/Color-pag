@@ -1,0 +1,42 @@
+// color
+
+$_background_color:#D7D5FF
+
+$_button_color: #6C63FF
+$_title_color: #2B2B2B
+
+$_frist_color:#FF6363
+$_second_color:#63ECFF
+$_third_color:#F363FF
+$_fourth_color:#63FF73
+$_fifth_color:#FFDD63
+$_sixth_color:#6663FF
+
+
+//font size
+
+$title_size: 2.25rem
+$p_size: 1.18rem
+
+$card_title_size: 1.5rem
+$card_p_size: 1.125rem
+
+//default setting
+    
+@mixin button_config($width)
+    width: $width
+    height: 50px
+
+    background: $_button_color
+    box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1)
+    border-radius: 5px
+
+    font-family: 'Lato', sans-serif
+    font-weight: 700
+    font-size: 1.25rem
+    line-height: 24xp
+    color: #fff
+    &:hover
+        scale: 105%
+        cursor: pointer
+    

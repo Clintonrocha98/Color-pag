@@ -1,0 +1,46 @@
+@import 'global'
+
+.main_pag
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100vh
+    background-color: $_background_color
+
+    .warrap
+        display: flex
+        width: 70%
+        align-items: center
+        justify-content: space-between
+
+        .title
+            width: 500px
+
+            h1
+                font-family: 'Merriweather', sans-serif
+                font-weight: 400
+                font-size: $title_size
+                line-height: 47px
+                color: $_title_color
+
+                margin-bottom: 25px
+
+            p
+                font-family: 'Lato', sans-serif
+                font-weight: 400
+                font-size: $p_size
+                line-height: 32px
+                color: #555555
+
+                margin-bottom: 40px
+
+            button
+                @include button_config(155px)
+
+    @media (max-width:1065px)
+        .warrap
+            flex-direction: column
+            .title
+                margin-bottom: 150px
+
+

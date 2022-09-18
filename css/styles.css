@@ -1,45 +1,255 @@
-.page-1 {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figcaption, footer, header, hgroup,
+menu, output, ruby, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, header, hgroup, menu {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "Fira Code", sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  border: none;
+  font-family: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main_pag {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  background: #D7D4FF;
-  width: 100%;
-  height: 560px;
+  justify-content: center;
+  height: 100vh;
+  background-color: #D7D5FF;
 }
-.page-1 .title-page {
-  width: 349px;
+.main_pag .warrap {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: space-between;
 }
-.page-1 .title-page h1 {
-  font-family: "Merriweather";
+.main_pag .warrap .title {
+  width: 500px;
+}
+.main_pag .warrap .title h1 {
+  font-family: "Merriweather", sans-serif;
   font-weight: 400;
   font-size: 2.25rem;
   line-height: 47px;
   color: #2B2B2B;
+  margin-bottom: 25px;
 }
-.page-1 .title-page p {
-  font-family: "Lato";
+.main_pag .warrap .title p {
+  font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 1.19rem;
-  margin-top: 25px;
+  font-size: 1.18rem;
   line-height: 32px;
   color: #555555;
+  margin-bottom: 40px;
 }
-.page-1 button {
+.main_pag .warrap .title button {
   width: 155px;
   height: 50px;
   background: #6C63FF;
   box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
   border-radius: 5px;
-  margin-top: 38px;
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
-  line-height: 24px;
-  color: #FFFFFF;
+  line-height: 24xp;
+  color: #fff;
 }
-.page-1 button:hover {
+.main_pag .warrap .title button:hover {
+  scale: 105%;
   cursor: pointer;
-  box-shadow: 5px 5px 5px rgba(49, 20, 77, 0.4117647059);
+}
+@media (max-width: 1065px) {
+  .main_pag .warrap {
+    flex-direction: column;
+  }
+  .main_pag .warrap .title {
+    margin-bottom: 150px;
+  }
+}
+
+.cards_pag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 50px;
+}
+.cards_pag .container_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  grid-template-rows: repeat(2, 415px);
+  gap: 80px;
+}
+.cards_pag .warrap_grid {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.cards_pag .warrap_grid .color {
+  width: 340px;
+  height: 222px;
+}
+.cards_pag .warrap_grid .info {
+  width: 340px;
+  height: 222px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.cards_pag .warrap_grid .info h1 {
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 30px;
+  color: #2B2B2B;
+}
+.cards_pag .warrap_grid .info p {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 30px;
+  margin: 30px 0;
+  color: #555555;
+}
+.cards_pag .warrap_grid .frist {
+  background-color: #FF6363;
+}
+.cards_pag .warrap_grid .second {
+  background-color: #63ECFF;
+}
+.cards_pag .warrap_grid .third {
+  background-color: #F363FF;
+}
+.cards_pag .warrap_grid .fourth {
+  background-color: #63FF73;
+}
+.cards_pag .warrap_grid .fifth {
+  background-color: #FFDD63;
+}
+.cards_pag .warrap_grid .sixth {
+  background-color: #6663FF;
+}
+@media (max-width: 1200px) {
+  .cards_pag .container_grid {
+    grid-template-columns: repeat(2, 340px);
+    grid-template-rows: repeat(3, 415px);
+  }
+}
+@media (max-width: 840px) {
+  .cards_pag .container_grid {
+    grid-template-columns: repeat(1, 340px);
+    grid-template-rows: repeat(6, 415px);
+  }
+}
+
+.contact_pag {
+  height: 100vh;
+  background: #D7D5FF;
+}
+.contact_pag .container_form {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.contact_pag .container_form .form_contato {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact_pag .container_form .form_contato h2 {
+  font-family: "Merriweather";
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 40px;
+  color: #2B2B2B;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.contact_pag .container_form .form_contato input, .contact_pag .container_form .form_contato textarea {
+  width: 470px;
+  height: 65px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  border: 0px;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 22px;
+  color: rgba(110, 114, 117, 0.74);
+  margin-bottom: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.contact_pag .container_form .form_contato input:focus, .contact_pag .container_form .form_contato textarea:focus {
+  box-shadow: 0 0 0 0;
+  border: 1px solid #5cc151;
+  outline: 0;
+}
+.contact_pag .container_form .form_contato button {
+  width: 471px;
+  height: 50px;
+  background: #6C63FF;
+  box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 24xp;
+  color: #fff;
+  margin-top: 15px;
+}
+.contact_pag .container_form .form_contato button:hover {
+  scale: 105%;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */
