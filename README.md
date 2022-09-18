@@ -11,6 +11,8 @@ Esse projeto é uma landing page para gerar cores.
 
 - [ ] Criar as seguintes seções: Pagina principal, Pagina com opções de cores (Unsando Display: Grid), Pagina para contato.
 
+[Link da pagina](https://clintonrocha98.github.io/Color-pag/)
+
 <img align="center">
   <img src=".github/pag_1.png" width="100%" />
 </img>
